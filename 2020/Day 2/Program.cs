@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 class Program
 {
-    // Returns the product of the two (or three) values in a text file that sum to 2020
+    // Checks a list of passwords with given policies and obtains the number of valid passwords
     static void Main(string[] args)
     {
         // input.txt is in my debug\net5.0 folder
