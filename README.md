@@ -1,4 +1,4 @@
-# advent-of-code
+# advent-of-code C#
 My collection of solutions for Eric Wastl's Advent of Code challenges.
 
-Last update: 2020 Day 1
+2020 Day 1: Text file input and list iteration
