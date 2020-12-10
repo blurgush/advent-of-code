@@ -16,11 +16,6 @@ class Program
 
         // Populate a list with strings corresponding to each line, basically a 2d array
         List<string> skiMap = new List<string>();
-        // I would have liked to just have the whole thing as a 2d array, but since the map is
-        // of theoretically infinite length, I'll just have a third parameter that describes which
-        // 'sector' the position is in.
-        List<List<string>> fullMap = new List<List<string>>();
-
         using (StreamReader sr = File.OpenText(path))
         {
             string s;
@@ -30,8 +25,6 @@ class Program
             }
             sr.Close();
         }
-        // Populate the full map
-        fullMap.Add(skiMap);
 
         // We want the both the x and y size here
         int xSize = skiMap[0].Length;
@@ -42,35 +35,30 @@ class Program
         {
             int count = 0;
 
-            // Current position (0, 0, 0)
-            int[] position = new int[3];
-            position[0] = 0; // sector
-            position[1] = 0; // x
-            position[2] = 0; // y
+            // Current position (0, 0)
+            int[] position = new int[2];
+            position[0] = 0; // x
+            position[1] = 0; // y
 
             // While we haven't reached the end on y
-            while(position[2] < ySize)
+            while(position[1] < ySize)
             {
-
                 // If we're on a tree, increment the count
-                if (fullMap[position[0]][position[2]][position[1]] == '#')
+                if (skiMap[position[1]][position[0]] == '#')
                     count++;
 
-                // If we're about to go too far on x, we add on a new sector and move into it
-                if (position[1] + xDelta > (xSize - 1)) // Reminder that the last index of the map is (xSize - 1)
+                // If we're about to go too far on x, we wrap around to the beginning based on the difference
+                if (position[0] + xDelta > (xSize - 1)) // Reminder that the last index of the map is (xSize - 1)
                 {
-                    fullMap.Add(skiMap);
-                    position[0]++;
-                    // Careful that we move onto the right x position
-                    int difference = (xSize - 1) - position[1];
-                    position[1] = (xDelta - 1) - difference;
+                    int difference = (xSize - 1) - position[0];
+                    position[0] = (xDelta - 1) - difference;
                 }
                 // Otherwise increase x by xDelta as usual
                 else
-                    position[1] += xDelta;
+                    position[0] += xDelta;
 
                 // Either way, increment y to keep going down
-                position[2] += yDelta;
+                position[1] += yDelta;
             }
 
             return count;
