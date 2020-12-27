@@ -141,7 +141,7 @@ class Program
             }
 
             return 0;
-        };
+        }
         answer2 = part2();
         Console.WriteLine("Part 2: Your seat ID is " + answer2 + "\n");
 
