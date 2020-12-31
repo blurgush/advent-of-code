@@ -6,7 +6,8 @@ using System.Collections.Generic;
 
 class Program
 {
-    // 
+    // Gather a grouped list of questionnaire data into strings that represent groups
+    // And sum up queries for unique and unanimous responses
     static void Main(string[] args)
     {
         // input.txt is in my debug\net5.0 folder
