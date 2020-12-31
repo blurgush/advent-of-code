@@ -21,7 +21,6 @@ class Program
         string s = File.ReadAllText(path, Encoding.UTF8);
         string[] entries = s.Split(new string[] { "\n\n" }, StringSplitOptions.RemoveEmptyEntries);
         // We're left with an array of strings, each representing a group
-            
 
         // Sum the amount of unique Yes answers in each group
         // Each character in the group strings represents a single Yes answer
