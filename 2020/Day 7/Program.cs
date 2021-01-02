@@ -122,9 +122,7 @@ class Program
 
             // Keep calling the function until we don't find any more bags
             while (countedBags > 0)
-            {
                 countBags();
-            }
 
             return goodBags.Count;
         }
@@ -139,12 +137,8 @@ class Program
             Bag getBag(string name)
             {
                 foreach (Bag b in bags)
-                {
                     if (name.Contains(b.getColor()))
-                    {
                         return b;
-                    }
-                }
                 // If the name is wrong, this will show up
                 return bags[593];
             }
@@ -177,9 +171,7 @@ class Program
 
                     // Now add the counts of each child bag, as well as their inner bag counts
                     for (int i = 0; i < children.Count; i++)
-                    {
                         count += counts[i] + returnInnerBagCount(counts[i], children[i]);
-                    }
 
                     // Return the sum, multiplied by the count of bags
                     return n * count;
