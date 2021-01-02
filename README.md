@@ -12,3 +12,5 @@ My collection of solutions for Eric Wastl's Advent of Code challenges.
 [2020 Day 5](https://github.com/blurgush/advent-of-code/blob/main/2020/Day%205/Program.cs): Simple class and binary partitioning
 
 [2020 Day 6](https://github.com/blurgush/advent-of-code/blob/main/2020/Day%206/Program.cs): Basic text processing
+
+[2020 Day 7](https://github.com/blurgush/advent-of-code/blob/main/2020/Day%207/Program.cs): Text processing and recursion
