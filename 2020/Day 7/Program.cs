@@ -72,15 +72,9 @@ class Program
 
             // First we'll add the bags that can directly hold a shiny gold one
             foreach (Bag b in bags)
-            {
                 foreach (Tuple<string, int> t in b.getContents())
-                {
-                    // If the bag can directly hold a shiny gold bag
-                    if (t.Item1.Contains("shiny gold")) {
+                    if (t.Item1.Contains("shiny gold"))
                         goodBags.Add(b);
-                    }
-                }
-            }
 
             // Now we want to make a function that we can keep calling until we find all the bags
             // We'll also need something to track how many bags we count per run
