@@ -14,3 +14,5 @@ My collection of solutions for Eric Wastl's Advent of Code challenges.
 [2020 Day 6](https://github.com/blurgush/advent-of-code/blob/main/2020/Day%206/Program.cs): Basic text processing
 
 [2020 Day 7](https://github.com/blurgush/advent-of-code/blob/main/2020/Day%207/Program.cs): Text processing and recursion
+
+[2020 Day 8](https://github.com/blurgush/advent-of-code/blob/main/2020/Day%208/Program.cs): Instruction jumping and infinite loop detection
