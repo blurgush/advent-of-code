@@ -10,4 +10,3 @@ C:\Users\jbccu\source\repos\advent-of-code\Driver\Driver\Driver\obj\Debug\netcor
 C:\Users\jbccu\source\repos\advent-of-code\Driver\Driver\Driver\obj\Debug\netcoreapp3.1\Driver.dll
 C:\Users\jbccu\source\repos\advent-of-code\Driver\Driver\Driver\obj\Debug\netcoreapp3.1\Driver.pdb
 C:\Users\jbccu\source\repos\advent-of-code\Driver\Driver\Driver\obj\Debug\netcoreapp3.1\Driver.genruntimeconfig.cache
-C:\Users\jbccu\source\repos\advent-of-code\Driver\Driver\Driver\obj\Debug\netcoreapp3.1\Driver.csprojAssemblyReference.cache
