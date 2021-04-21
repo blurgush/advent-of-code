@@ -18,3 +18,5 @@ My collection of solutions for Eric Wastl's Advent of Code challenges.
 [2020 Day 8](https://github.com/blurgush/advent-of-code/blob/main/2020/Day%208/Program.cs): Instruction jumping and infinite loop detection
 
 [2020 Day 9](https://github.com/blurgush/advent-of-code/blob/main/2020/Day%209/Program.cs): Long list traversals
+
+[2020 Day 10](https://github.com/blurgush/advent-of-code/blob/main/2020/Day%2010/Program.cs): Dynamic programming tabulation algorithm
